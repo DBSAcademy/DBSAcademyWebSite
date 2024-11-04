@@ -1,0 +1,70 @@
+/* Navbar AppBar */
+
+
+.navbar-appbar {
+    background-color: rgba(23, 68, 31, 0.8) !important;
+}
+
+
+.navbar-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px; 
+}
+
+.navbar-logo {
+    width: 100%;
+    height: 120px; 
+}
+
+
+.navbar-brand .navbar-link {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.desktop-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 30 !important;
+    font-weight: bold !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1b6441 !important;
+}
+
+
+.nav-link-active {
+    color: #1b6441;
+    font-weight: bold;
+}
+
+
+.mobile-menu-icon {
+    display: none; 
+}
+
+
+@media (max-width: 960px) {
+    .desktop-menu {
+        display: none; 
+    }
+    .mobile-menu-icon {
+        display: block; 
+    }
+}
+
+
+.navbar-toolbar {
+    min-height: 64px; 
+}
