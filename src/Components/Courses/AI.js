@@ -135,7 +135,11 @@ function AI(){
          </div>
          <div>
          <form onSubmit={handleSubmit} className="contact-form">
-                <h2>Contact Us</h2>
+                <h2>Contact Me</h2>
+                <p style={{ fontSize: '16px', color: '#333', lineHeight: '1.5', textAlign: 'center' }}>
+                  Please fill in the details below, and our team member will contact you.
+                </p>
+
                 <label>
                     Name:
                     <input 

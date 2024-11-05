@@ -9,6 +9,14 @@ import '../Courses/Java';
 import '../Courses/Python';
 import '../Pages/ContactUs'
 import instituteLogo from '../Images/DBSlogo1.png'; 
+
+import PersonIcon from '@mui/icons-material/Person';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import CallIcon from '@mui/icons-material/Call';
+import MailIcon from '@mui/icons-material/Mail';
 function Home() {
     const navigate = useNavigate();
 
@@ -22,11 +30,14 @@ function Home() {
     const handleCourseClick = (route) => {
         navigate(route);
     };
+    const handleMore = () => {
+      navigate('/NewBatches');
+  };
 
     const handleContactUs = (route) => {
       navigate('/ContactUs');
   };
-
+ 
     const courses = [
         { id: 1 , name: 'Artificial Intelligence', image: require('../Images/Courses/Ai.jpeg'), route: '/AI' },
         { id: 2, name: 'Data Science', image: require('../Images/Courses/DataScience.jpg'), route: '/DataScience' },
@@ -36,6 +47,15 @@ function Home() {
         { id: 6, name: 'Python', image: require('../Images/Courses/python.png'), route: '/Python' },
         
     ];
+
+    const batches = [
+        { id: 1 , name: 'Artificial Intelligence', image: require('../Images/Courses/Ai.jpeg'), route: '/AI' },
+        { id: 2, name: 'Data Science', image: require('../Images/Courses/DataScience.jpg'), route: '/DataScience' },
+        { id: 3, name: 'Cloud Computing', image: require('../Images/Courses/cloud.avif'), route: '/CloudComputing' },
+        { id: 4, name: 'DevOps', image: require('../Images/Courses/DevOps.jpeg'), route: '/DevOps' },
+        { id: 5, name: 'Java', image: require('../Images/Courses/java.jpg'), route: '/Java' },
+        { id: 6, name: 'Python', image: require('../Images/Courses/python.png'), route: '/Python' },
+    ]
 
     return (
         <div>
@@ -100,8 +120,38 @@ function Home() {
             </div>
 
             <h1 className="headings">Batches</h1>
-            <h1>[.......]</h1>
+            <div className="courses-grid">
+                {batches.map((batch) => (
+                    <div key={batch.id} className="batch-card" onClick={() => handleCourseClick(batch.route)}>
+                        <img src={batch.image} alt={batch.name} className="course-image" />
+                        <h2 className="course-name">{batch.name}</h2>
 
+                        <div className="batch-info">
+                          <PersonIcon style={{ color:'#1e7049',fontSize: '50px' }} />
+                          <div className="batch-info-text-container">
+                            <span className="batch-info-text"><b>Mode:</b>[online/offline]</span>
+                            <span className="batch-info-text"><b>Trainer:</b>[name]</span>
+                          </div>
+                        </div>
+
+                        <div className="batch-info">
+                            <AccessTimeIcon style={{ color:'#1e7049'}}  />
+                            <span className="batch-info-text"><b>Timings:</b>[0hrs]</span>
+                        </div>
+
+                 
+                        <div className="batch-info">
+                            <CalendarTodayIcon style={{ color:'#1e7049'}} />
+                            <span className="batch-info-text"><b>Dates:</b>[dd/mm/yyyy]</span>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <div className="button-container">
+                <button onClick={handleMore} className="more-button">
+                    More...
+                </button>
+            </div>
             <div>
               <h1 className="headings">Join a Community of Innovators</h1>
               <div className="adv-grid">
@@ -124,9 +174,42 @@ function Home() {
                </div>
             </div>
 
-            <h1>Follow Us On </h1>
-            <h1>Make a Call </h1>
-            <h1>Send Email</h1>
+            <div className="contact-cards-container">
+                <div className="contact-card" onClick={() => window.open('https://www.instagram.com', '_blank')}>
+                <div onClick={() => window.open('https://www.instagram.com', '_blank')} style={{ display: 'inline-block', marginRight: '15px' }}>
+                   <InstagramIcon style={{ fontSize: 40, color: '#E75480' }} />
+                   <span className="contact-card-text">Instagram</span>
+                </div>
+                <div onClick={() => window.open('https://www.linkedin.com', '_blank')} style={{ display: 'inline-block' }}>
+                   <LinkedInIcon style={{ fontSize: 40, color: '#0A66C2' }} />
+                   <span className="contact-card-text">LinkedIn</span>
+               </div>
+               <span className="contact-card-text"><h3 style={{ color:'#1e7049'}}>Follow Us On</h3></span>
+               </div>
+      
+                <div className="contact-cards-container">
+                   <div className="contact-card" >
+                     <CallIcon style={{ fontSize: 40, color: '#1e7049' }} />
+                   <div>
+                    <a href="tel:+91 8340863204" style={{ display: 'block', margin: '10px 0', color: 'black', textDecoration: 'none' }}>
+                    <span style={{ fontSize: '20px' }}>+91 8340863204</span>
+                    </a>
+                   </div>
+                   <div>
+                    <a href="tel:+91 9121067423" style={{ display: 'block', margin: '10px 0', color: 'black', textDecoration: 'none' }}>
+                    <span style={{ fontSize: '20px' }}>+91 9121067423</span>
+                    </a>
+                   </div>
+                   <span className="contact-card-text"><h3 style={{ color:'#1e7049'}}>Call Us</h3></span>
+                 </div>
+               </div>
+
+                <div className="contact-card" onClick={() => window.location.href = 'mailto:dbsacademy25@gmail.com'}>
+                    <MailIcon style={{ fontSize: 40, color: 'purple' }} />
+                    <span className="contact-card-phone-number">dbsacademy25@gmail.com</span>
+                    <span className="contact-card-text"><h3 style={{ color:'#1e7049'}}> Send an Email</h3></span>
+                </div>
+            </div>
             <h3 className="adv">Join Us – Where Knowledge Meets Opportunity! </h3>
             <div className="button-container">
                 <button onClick={handleContactUs} className="more-button">

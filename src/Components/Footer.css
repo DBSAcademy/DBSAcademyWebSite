@@ -48,7 +48,21 @@
     text-decoration: underline;
   }
   
-  .footer-contact p {
-    margin: 5px 0;
+  .footer-contact p, .footer-social p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .footer-social a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-social a:hover {
+    text-decoration: underline;
+  }
+  
   
