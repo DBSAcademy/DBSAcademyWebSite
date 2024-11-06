@@ -42,7 +42,7 @@ function JavaFullStack(){
          <p className="overview"><b>Java Full Stack Development </b>involves the mastery of both front-end and back-end technologies, enabling developers to create complete web applications. The front-end typically utilizes frameworks like Angular or React, while the back-end relies on Java-based technologies such as Spring Boot or Java EE for server-side logic. This dual competency allows developers to build, maintain, and optimize all aspects of web applications, from user interfaces to database interactions. The demand for Java Full Stack Developers remains strong, as businesses seek versatile professionals capable of handling multiple layers of application development. Opportunities abound in various sectors, including finance, healthcare, and technology, where Java's robustness and scalability make it a preferred choice.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Fundamentals of Programming</b>

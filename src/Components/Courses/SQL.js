@@ -43,7 +43,7 @@ function SQL(){
          </p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Introduction to Databases</b>

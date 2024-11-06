@@ -42,7 +42,7 @@ function PythonFullStack(){
          <p className="overview"><b>Python Full Stack Development </b>encompasses the ability to work on both the front-end and back-end of web applications using Python and its frameworks. Python is widely recognized for its simplicity and readability, making it an excellent choice for developers at all skill levels. On the front end, technologies like HTML, CSS, and JavaScript are used, often alongside frameworks like React or Vue.js. The back end typically utilizes Python frameworks such as Django or Flask, which streamline the development of robust and scalable applications. With the increasing adoption of Python across industries for web development, data analysis, and machine learning, there is a high demand for skilled Python Full Stack Developers. Job opportunities are abundant in sectors such as tech, finance, healthcare, and startups, where full-stack capabilities allow for versatility in building complete applications.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Fundamentals of Programming</b>

@@ -42,7 +42,7 @@ function MernFullStack(){
          <p className="overview"><b>MERN Full Stack Development </b>involves using a powerful technology stack comprising MongoDB, Express.js, React.js, and Node.js to build dynamic web applications. This stack enables developers to create robust client-server architectures with a JavaScript foundation, allowing for a seamless experience across both the front end and back end. MongoDB serves as the NoSQL database, providing flexibility in data management, while Express.js simplifies server-side development with Node.js, which allows for high-performance, non-blocking operations. React.js, with its component-based architecture, facilitates the creation of responsive and interactive user interfaces. As web applications become increasingly complex and user-centered, the demand for skilled MERN developers continues to grow, presenting abundant job opportunities in various sectors, including technology, finance, healthcare, and e-commerce.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Fundamentals of Web Development</b>

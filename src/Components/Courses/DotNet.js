@@ -42,7 +42,7 @@ function DotNet(){
          <p className="overview"><b>.NET development with AWS (Amazon Web Services) </b>.NET development with AWS (Amazon Web Services) combines the power of the .NET framework with the scalability and flexibility of cloud computing through AWS. This technology stack allows developers to build, deploy, and manage applications in a cloud environment, enabling them to take advantage of AWS’s wide range of services, such as computing power, storage options, and databases. With .NET's robust capabilities for developing web applications, APIs, and microservices, developers can create high-performance applications that can scale based on demand. The integration of AWS services, such as AWS Lambda for serverless computing, Amazon RDS for managed databases, and Amazon S3 for storage, enhances the deployment process and operational efficiency. As organizations increasingly adopt cloud solutions, the demand for .NET developers skilled in AWS continues to rise, offering numerous job opportunities in various industries.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Fundamentals of Software Development</b>

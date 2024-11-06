@@ -46,7 +46,7 @@ function AI(){
               AI practitioners to innovate and optimize processes, drive data-driven insights, and develop intelligent systems, making AI expertise a valuable asset in the job market.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Foundation and Basics</b>

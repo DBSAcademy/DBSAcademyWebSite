@@ -47,7 +47,7 @@ function DataScience(){
             sectors such as finance, healthcare, e-commerce, and technology.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Introduction to Data Science</b>

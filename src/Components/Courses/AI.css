@@ -5,7 +5,9 @@
     padding-top: 20px;
 }
 
-
+.container-list-roadmap{
+    display: flex; justify-Content: space-between
+}
 .overview {
     text-align: justify;
     padding: 0 20px; 
@@ -162,9 +164,14 @@
     .list-container {
         padding-left: 10%; 
     }
-
+    
+    .container-list-roadmap{
+        display:flex;
+        flex-direction: column;
+    }
     .courseRoadMap-container,
     .contact-form {
+        
         padding-left: 10;
         margin: 0 auto;
         width: 90%;

@@ -42,7 +42,7 @@ function Python(){
          <p className="overview"><b>Python </b>is a versatile and powerful programming language widely used in various domains such as web development, data science, machine learning, automation, and scripting. Its simplicity and readability make it an excellent choice for beginners, while its robust libraries and frameworks support complex applications. Python's popularity continues to grow, driven by its applicability in cutting-edge technologies like artificial intelligence and big data. Job opportunities for Python developers are abundant, with roles ranging from software engineers to data scientists and machine learning engineers. As organizations increasingly adopt Python for their projects, mastering this language opens numerous career pathways and enhances employability in the tech industry.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Introduction to Python</b>

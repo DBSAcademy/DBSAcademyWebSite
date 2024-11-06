@@ -46,7 +46,7 @@ function DataAnalysis(){
           With industries spanning healthcare, finance, marketing, and technology, job opportunities for data analysts are abundant, including roles such as Business Analyst, Data Scientist, and Data Consultant.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Introduction to Data Analysis</b>

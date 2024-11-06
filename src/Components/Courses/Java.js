@@ -42,7 +42,7 @@ function Java(){
          <p className="overview"><b>Java </b>is a versatile, high-level programming language widely recognized for its platform independence, enabling developers to write code that runs on any device equipped with the Java Virtual Machine (JVM). Known for its robust security features and scalability, Java is a staple in enterprise-level applications, mobile development (especially Android apps), and web applications. Its object-oriented nature promotes code reusability and maintainability, making it a favorite among developers for building complex systems. With a rich ecosystem of libraries and frameworks (such as Spring and Hibernate), Java continues to evolve, ensuring it remains relevant in today's fast-paced technology landscape. The demand for Java developers is consistently high, with numerous job opportunities available in software development, application development, and backend programming.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Introduction to Java</b>

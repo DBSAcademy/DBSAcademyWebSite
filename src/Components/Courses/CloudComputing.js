@@ -46,7 +46,7 @@ function CloudComputing(){
           Cloud Engineer, DevOps Engineer, and Cloud Consultant. The technology is trending as businesses look for innovative solutions to meet the challenges of remote work and digital transformation.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Foundation of Cloud Computing</b>

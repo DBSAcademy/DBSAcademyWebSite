@@ -42,7 +42,7 @@ function SalesForce(){
          <p className="overview"><b>Salesforce </b>is a leading cloud-based Customer Relationship Management (CRM) platform that enables businesses to manage customer data, sales processes, and service interactions efficiently. Its extensive suite of applications includes sales automation, customer service, marketing automation, analytics, and application development, making it a versatile tool for businesses of all sizes. The platform's advantages include enhanced customer relationships, improved sales performance, streamlined operations, and the ability to customize applications through its robust development tools. As companies increasingly adopt digital transformation strategies, Salesforce professionals are in high demand, offering numerous job opportunities in roles such as Salesforce Administrator, Developer, Consultant, and Architect.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Introduction to Salesforce</b>

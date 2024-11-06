@@ -42,7 +42,7 @@ function DevOps(){
          <p className="overview"><b>DevOps </b>is a modern approach that integrates software development and IT operations, focusing on collaboration, automation, and continuous improvement to deliver high-quality software more rapidly and efficiently. By fostering a culture of shared responsibility, DevOps enables teams to work together seamlessly throughout the development lifecycle. Key practices include Continuous Integration (CI), Continuous Deployment (CD), and Infrastructure as Code (IaC), which streamline processes, reduce errors, and enhance deployment speed. As organizations increasingly move towards cloud computing and microservices architectures, the demand for DevOps professionals continues to grow, with job opportunities available in various roles, including DevOps Engineer, Site Reliability Engineer, and Cloud Engineer. Embracing DevOps not only enhances operational efficiency but also positions individuals to thrive in a competitive job market.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Introduction to DevOps</b>

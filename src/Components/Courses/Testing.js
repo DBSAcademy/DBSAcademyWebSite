@@ -42,7 +42,7 @@ function Testing(){
          <p className="overview"><b>Software Testing </b>Software Testing is a critical process in the software development lifecycle that aims to ensure the quality and functionality of software applications. By systematically evaluating a software product, testers can identify defects, ensure compliance with requirements, and validate performance. The importance of software testing cannot be overstated, as it helps in preventing costly errors, enhancing user satisfaction, and ensuring security and reliability. With the rise of agile methodologies and DevOps practices, the demand for skilled software testers is on the rise. Job opportunities in this field include roles such as Quality Assurance (QA) Tester, Test Engineer, and Automation Tester. As organizations increasingly prioritize quality in their software development, the landscape for software testing continues to evolve, with opportunities in manual testing, automation testing, performance testing, and security testing.</p>
          <div>
          <h1 className="mainHeading">Course Content</h1>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+         <div className="container-list-roadmap">
         <div style={{ flex: 1 }}>
             <ol className='list-container'>
                 <li className='list-headings'><b>Introduction to Software Testing</b>
