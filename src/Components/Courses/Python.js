@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Python.css'
 import { useNavigate } from 'react-router-dom';
 import '../Pages/ContactUs'
-import courseRoadmapImage from '../Images/CoursesRoadMap/python_roadmap.jpg'
+import courseRoadmapImage from '../Images/CoursesRoadMap/python_roadmap.jpg';
+import emailjs from 'emailjs-com';
 
 function Python(){
     const navigate = useNavigate();
@@ -28,13 +29,35 @@ function Python(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setSubmitted(true);
-        setFormData({
-            name: '',
-            mobile: '',
-            email: '',
-            course: ''
-        });
+
+        // Send email using EmailJS
+        emailjs
+            .send(
+                'service_fxr366t', // Replace with your EmailJS service ID
+                'template_h30tj1u', // Replace with your EmailJS template ID
+                {
+                    name: formData.name,
+                    email: formData.email,
+                    mobile: formData.mobile,
+                    course: formData.course,
+                },
+                'n1d1fLWTG-h7eFF98' // Replace with your EmailJS user ID (found in EmailJS dashboard)
+            )
+            .then(
+                (response) => {
+                    console.log('Email sent successfully!', response.status, response.text);
+                    setSubmitted(true);
+                    setFormData({
+                        name: '',
+                        mobile: '',
+                        email: '',
+                        course: '',
+                    });
+                },
+                (error) => {
+                    console.error('Error sending email:', error);
+                }
+            );
     };
     return (
        <div>
@@ -164,6 +187,7 @@ function Python(){
                 <p style={{ fontSize: '16px', color: '#333', lineHeight: '1.5', textAlign: 'center' }}>
                   Please fill in the details below, and our team member will contact you.
                 </p>
+
                 <label>
                     Name:
                     <input 
