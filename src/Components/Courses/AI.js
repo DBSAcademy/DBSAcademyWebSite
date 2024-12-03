@@ -135,7 +135,7 @@ function AI(){
             </ol>
             </div>
             <div className="courseRoadMap-container">
-                    <img src={courseRoadmapImage} alt="Course Roadmap"className='courseRoadMap' />
+                    <img src={courseRoadmapImage} alt="Course Roadmap" className='courseRoadMap' />
                 </div>
             </div>
             <h1 className="mainHeading">Course's Key Features</h1>

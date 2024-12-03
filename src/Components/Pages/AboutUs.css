@@ -89,5 +89,48 @@
     .vision, .mission {
         margin: 10px 0; 
     }
+    .list-icon {
+        width: 80%;
+        height: 40%;
+        margin: 40px 20px;
+    }
+    .career-item:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .career-item:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
 }
-
+ 
+@media(max-width:480px){
+    .career-item :nth-child(){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .career-item:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .list-icon {
+        width: 80%;
+        height: 40%;
+        margin: 40px 20px;
+    }
+    .career-item:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}

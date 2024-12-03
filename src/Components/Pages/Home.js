@@ -191,12 +191,12 @@ function Home() {
                    <div className="contact-card" >
                      <CallIcon style={{ fontSize: 40, color: '#1e7049' }} />
                    <div>
-                    <a href="tel:+91 8340863204" style={{ display: 'block', margin: '10px 0', color: 'black', textDecoration: 'none' }}>
+                    <a href="tel:+91 8340863204" style={{ display: 'block', padding: '10px 0', color: 'black', textDecoration: 'none' }}>
                     <span style={{ fontSize: '20px' }}>+91 8340863204</span>
                     </a>
                    </div>
                    <div>
-                    <a href="tel:+91 9121067423" style={{ display: 'block', margin: '10px 0', color: 'black', textDecoration: 'none' }}>
+                    <a href="tel:+91 9121067423" style={{ display: 'block', padding: '10px 0', color: 'black', textDecoration: 'none' }}>
                     <span style={{ fontSize: '20px' }}>+91 9121067423</span>
                     </a>
                    </div>

@@ -13,7 +13,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-links">
-        <h3>Quick Links</h3>
+        <h4>Quick Links</h4>
         <ul>
           <li><Link to="/Home">Home</Link></li>
           <li><Link to="/AboutUs">About Us</Link></li>
@@ -25,21 +25,21 @@ const Footer = () => {
       </div>
 
       <div className="footer-contact">
-        <h3>Contact Us</h3>
-        <p>Address:Street, City, Country</p>
+        <h4>Contact Us</h4>
+        <p>Address:<br />Street, City, Country</p>
         <p>
           <Phone style={{ verticalAlign: 'middle' }} /> 
-          <a href="tel:+918340863204" >+91 8340863204</a> / 
-          <a href="tel:+919121067423" >+91 9121067423</a>
+          <a href="tel:+918340863204" style={{textDecoration:'none',color:'white'}}>+91 8340863204</a>
+          <a href="tel:+919121067423" style={{textDecoration:'none',color:'white'}}>+91 9121067423</a>
         </p>
         <p>
           <Email style={{ verticalAlign: 'middle' }} />
-          <a href="mailto:dbsacademy25@gmail.com" style={{ marginLeft: '5px' }}>dbsacademy25@gmail.com</a>
+          <a href="mailto:dbsacademy25@gmail.com" style={{textDecoration:'none',color:'white'}}>dbsacademy25@gmail.com</a>
         </p>
       </div>
 
       <div className="footer-social">
-        <h3>Follow Us</h3>
+        <h4>Follow Us</h4>
         <p>
           <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
             <Instagram />

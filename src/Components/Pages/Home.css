@@ -150,7 +150,6 @@
     padding-left: 15px;
     padding-right: 15px;
     color: #1e7049 !important;
-    text-align: center;
     margin-bottom: 5px; 
 }
 
@@ -196,7 +195,7 @@
 }
 
 .contact-card-text {
-    display: block;
+    display: inline-block;
     margin-top: 10px;
     font-size: 18px;
     color: #000;
@@ -212,22 +211,38 @@
     .about-us-context {
         font-size: 1em; 
     }
-    
+    .institute-logo {
+        width: 50%; 
+        height: 70px;
+        margin-right: 10px; 
+    }
     .course-card,
-    .batch-card,
-    .contact-card {
+    .batch-card {
         width: 100%; 
         display: block;
     }
+    .contact-card{
+        width: 300px;
+        height:200px
+    }
 
     .what-we-do-image {
-        width: 80%; 
+        width: 95%; 
     }
 }
 
 @media (max-width: 480px) {
+    .institute-logo {
+        width: 50%; 
+        height: 70px;
+        margin-right: 10px; 
+    }
     .more-button {
         font-size: 0.9em; 
+    }
+    .contact-card{
+        width: 300px;
+        height:200px
     }
 
     .course-name {
@@ -236,5 +251,6 @@
 
     .contact-card-text {
         font-size: 0.9em;
+        margin-bottom: 10px;
     }
 }
